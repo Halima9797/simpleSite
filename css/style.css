@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.LOGO1 {
+    width: 100px;
+    margin: 30px 0;
+    cursor: pointer;
+}
+
+.logo2 {
+    width: 250px;
+    margin: 30px 0;
+    cursor: pointer;
+}
+
+.LOGOs {
+    text-align: center;
+}
+
+.menu-icon {
+    width: 40px;
+    margin: 30px 0;
+    cursor: pointer;
+    display: none;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: teal;
+}
+
+.row1 {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    /* margin: 100px 0spx; */
+}
+
+.col1 h1 {
+    position: relative;
+    font-size: 45px;
+    top: 40px;
+    padding: 0 60px;
+    color: #005653;
+}
+
+.col1 .woman {
+    position: relative;
+    width: 100%;
+    top: 60px;
+}
+
+.col1 {
+    /* border: 1px solid black; */
+    position: relative;
+    flex-basis: 60%;
+    display: block;
+    align-items: center;
+}
+
+.col2 {
+    /* border: 1px solid black; */
+    position: relative;
+    flex-basis: 60%;
+    display: block;
+    align-items: center;
+}
+
+.wrapper1 {
+    width: 80%;
+    background: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.125);
+    padding: 30px;
+    position: relative;
+}
+
+.wrapper1 .title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 8px;
+    color: #F50C0C;
+    text-align: left;
+}
+
+.wrapper1 .title1 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.wrapper1 .title2 {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: left;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-left: thick solid #F50C0C;
+    padding-left: 10px;
+}
+
+hr {
+    border: 1px solid #F50C0C;
+    width: 80%;
+}
+
+.wrapper1 .form {
+    width: 100%;
+}
+
+.SPN {
+    color: #F50C0C;
+}
+
+.wrapper1 .form .inputfield {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper1 .form .inputfield label {
+    width: 200px;
+    margin-right: 10px;
+}
+
+.wrapper1 .form .inputfield .input {
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.wrapper1 .form .inputfield .input:focus {
+    border: 1px solid #F50C0C;
+}
+
+.wrapper1 .form .inputfield p {
+    font-size: 14px;
+    color: #000000;
+}
+
+.wrapper1 .form .inputfield .check {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.wrapper1 .form .inputfield .check input[type="checkbox"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.wrapper1 .form .inputfield .check .checkmark {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #F50C0C;
+    display: block;
+    position: relative;
+}
+
+.wrapper1 .form .inputfield .check .checkmark:before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    width: 5px;
+    height: 2px;
+    border: 2px solid;
+    border-color: transparent transparent #fff #fff;
+    transform: rotate(-45deg);
+    display: none;
+}
+
+.wrapper1 .form .inputfield .check input[type="checkbox"]:checked~.checkmark {
+    background: #F50C0C;
+}
+
+.wrapper1 .form .inputfield .check input[type="checkbox"]:checked~.checkmark:before {
+    display: block;
+}
+
+.wrapper1 .form .inputfield .btn {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 0px;
+    background: #F50C0C;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+}
+
+.wrapper1 .form .inputfield .btn:hover {
+    background: #ff5858;
+}
+
+body {
+    background-image: url(../images/BG.jpg);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.T1 {
+    text-align: center;
+    color: #005653;
+    margin: 40px 0 40px 0;
+}
+
+.T3 {
+    text-align: center;
+    color: #F50C0C;
+    margin: 40px 0 40px 0;
+}
+
+.reg {
+    color: #F50C0C;
+}
+
+.T2 {
+    margin: 0 0 20px 0;
+}
+
+.P1 {
+    margin: 0 0 20px 0;
+}
+
+.op {
+    color: #F50C0C;
+}
+
+.list1 li {
+    margin: 0 0 8px 0;
+}
+
+.P2 {
+    margin: 32px 0 40px 0;
+}
+
+.link {
+    color: #F50C0C;
+}
+
+.video {
+    display: flex;
+}
+
+.video iframe {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+footer img {
+    width: 36px;
+    margin: 30px 0 0 0;
+}
+
+footer .site {
+    margin: 0 0 30px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer .site a {
+    color: #005653;
+}
+
+footer .contact1 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+}
+
+footer .info {
+    margin: 0 0 20px 0;
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+}
+
+footer .follow {
+    font-weight: bold;
+}
+
+.wrapper2 {
+    width: 80%;
+    margin: 0 auto 0 auto;
+}
+
+.list2 li {
+    margin-bottom: 10px;
+    color: #005653;
+}
+
+.wrapper2 ol {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+}
+
+.wrapper2 ol li {
+    counter-increment: my-awesome-counter;
+}
+
+.wrapper2 ol li::before {
+    content: counter(my-awesome-counter) ".  ";
+    color: #005653;
+    font-weight: bold;
+    margin-left: -20px;
+}
+
+.list2 {
+    list-style-type: none;
+}
+
+.list2 li::before {
+    content: "\f0eb";
+    font-family: "Font Awesome 5 Free";
+    padding: 0 10px 0 0;
+    color: #005653;
+}
+
+.expl {
+    margin-bottom: 20px;
+    padding-left: 40px;
+}
+
+@media only screen and (max-width: 900px) {
+    nav ul {
+        width: 100%;
+        background-color: #005653;
+        position: absolute;
+        top: 84px;
+        right: 0px;
+        z-index: 2;
+    }
+    nav ul li {
+        display: block;
+        margin-bottom: 8px;
+        margin-right: 35px;
+    }
+    nav ul li a {
+        color: white;
+    }
+    .menu-icon {
+        display: block;
+    }
+    #menuList {
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .row1 {
+        display: block;
+        /* align-items: center; */
+        /* margin: 100px 0spx; */
+    }
+    .col1 {
+        text-align: center;
+        overflow: hidden;
+    }
+    .col2 {
+        margin-bottom: 40px;
+    }
+    .col1 h1 {
+        position: relative;
+        font-size: 30px;
+        color: #005653;
+        margin-bottom: 40px;
+    }
+    .col1 .woman {
+        position: relative;
+        width: 70%;
+        top: 0px;
+    }
+    @media only screen and (max-width: 420px) {
+        .col1 h1 {
+            position: relative;
+            font-size: 20px;
+            color: #005653;
+            margin-bottom: 40px;
+        }
+        .wrapper1 {
+            width: 98%;
+            background: #fff;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.125);
+            padding: 10px;
+            position: relative;
+        }
+        .wrapper1 .title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 25px;
+            margin-bottom: 8px;
+            color: #F50C0C;
+            text-align: left;
+        }
+        .wrapper1 .title1 {
+            font-size: 22px;
+            font-weight: 500;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        .wrapper1 .title2 {
+            font-size: 20px;
+            font-weight: 600;
+            text-align: left;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            border-left: thick solid #F50C0C;
+            padding-left: 10px;
+        }
+        .logo2 {
+            width: 180px;
+            margin: 30px 0;
+            cursor: pointer;
+        }
+        .T1 {
+            text-align: center;
+            color: #005653;
+            margin: 40px 0 40px 0;
+            font-size: 26px;
+        }
+        .T3 {
+            text-align: center;
+            color: #F50C0C;
+            margin: 40px 0 40px 0;
+            font-size: 26px;
+        }
+    }
+}
